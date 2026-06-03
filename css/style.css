@@ -256,7 +256,7 @@ button:focus {
 .projects {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
   gap: 1rem;
   transition: all 250ms ease-out;
 }
@@ -270,12 +270,30 @@ button:focus {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
+  aspect-ratio: 1 / 1;
+  min-height: 180px;
+}
+
+.project a {
+  display: block;
+  height: 100%;
 }
 
 .project__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.project__placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1b1e26 0%, #2b3442 100%);
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
 }
 
 .project__metadata {
@@ -290,13 +308,26 @@ button:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0.35rem;
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
   transition: all 250ms ease-in;
   transform: translateY(-10px);
 }
 
 .project__metadata:hover {
-  opacity: 0.8;
+  opacity: 0.9;
   transform: translateY(0px);
+}
+
+.project__title {
+  display: -webkit-box;
+  font-size: 1rem;
+  line-height: 1.3;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .project__title:after {
@@ -309,6 +340,16 @@ button:focus {
   width: 50px;
   height: 2px;
   background-color: var(--color-accent);
+}
+
+.project__metadata p {
+  display: -webkit-box;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  max-width: 100%;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .case-study {
@@ -346,6 +387,17 @@ button:focus {
   list-style: disc;
   margin: 1rem 0;
   padding-left: 1.5rem;
+}
+
+.case-study__link {
+  color: var(--color-accent);
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.case-study__link:hover {
+  text-decoration: underline;
 }
 
 /* Testimonial */
@@ -496,11 +548,11 @@ button:focus {
   }
 
   .project__metadata .project__title {
-    font-size: 0.6rem;
+    font-size: 0.85rem;
   }
 
   .project__metadata p {
-    font-size: 0.5rem;
+    font-size: 0.72rem;
   }
 
   .testimonial {

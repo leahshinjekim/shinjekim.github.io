@@ -22,7 +22,8 @@ function handleActiveSelection(target) {
 function filterProjects(filter) {
   projectsContainer.classList.add("anim-out");
   projects.forEach((project) => {
-    if (filter === "all" || filter === project.dataset.type) {
+    const projectTypes = project.dataset.type.split(" ");
+    if (filter === "all" || projectTypes.includes(filter)) {
       project.style.display = "block";
     } else {
       project.style.display = "none";
