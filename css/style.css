@@ -357,9 +357,17 @@ button:focus {
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: var(--color-text);
+  font-size: 1rem;
   line-height: 1.7;
   margin-top: 2rem;
   padding: 2rem;
+  text-align: left;
+}
+
+.case-study p,
+.case-study li,
+.case-study__subtitle,
+.case-study__title {
   text-align: left;
 }
 
@@ -376,17 +384,32 @@ button:focus {
 .case-study__subtitle {
   font-size: 1.1rem;
   font-weight: bold;
+  line-height: 1.5;
   margin-bottom: 1rem;
 }
 
-.case-study p + p {
+.case-study p,
+.case-study li {
+  font-size: 1rem;
+}
+
+.case-study p + p,
+.case-study__list + p {
   margin-top: 1rem;
 }
 
 .case-study__list {
   list-style: disc;
+  list-style-position: outside;
   margin: 1rem 0;
   padding-left: 1.5rem;
+  text-align: left;
+}
+
+.case-study__list li {
+  display: list-item;
+  margin-bottom: 0.35rem;
+  padding-left: 0.25rem;
 }
 
 .case-study__link {
