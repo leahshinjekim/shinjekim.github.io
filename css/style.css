@@ -198,6 +198,7 @@ button:focus {
 }
 
 .major {
+  flex: 1;
   background-color: var(--color-primary-variant);
   padding: 2rem 1rem;
   color: var(--color-text);
@@ -308,6 +309,43 @@ button:focus {
   width: 50px;
   height: 2px;
   background-color: var(--color-accent);
+}
+
+.case-study {
+  background-color: var(--color-primary-variant);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: left;
+}
+
+.case-study--compact {
+  margin-top: 1rem;
+}
+
+.case-study__title {
+  color: var(--color-accent);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.case-study__subtitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.case-study p + p {
+  margin-top: 1rem;
+}
+
+.case-study__list {
+  list-style: disc;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
 }
 
 /* Testimonial */

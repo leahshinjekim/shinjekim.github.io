@@ -27,15 +27,12 @@
       src="https://kit.fontawesome.com/1499ba4aca.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Typeit -->
-    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Javascript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/portfolios.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
-    <script type="module" src="src/type.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -81,14 +78,15 @@
           />
           <h2
             class="home__title"
-            aria-label="Hello, I'm a software engineer Leah"
+            aria-label="Hello, I'm Leah, a software engineer"
           >
             Hello<br />
-            I&#39;m a
-            <strong class="home__title--strong">Software Engineer</strong> Leah
+            I&#39;m Leah, a
+            <strong class="home__title--strong">Software Engineer</strong>
           </h2>
           <p class="home__description">
-            Currently pursuing Master of IT at UTS, based in Sydney, Australia
+            Sydney-based software engineer with 4 years of production
+            experience, strongest in Android and mobile application development
           </p>
           <a class="home__contact" href="#contact">Contact Me</a>
         </div>
@@ -97,37 +95,46 @@
       <section id="about" class="section max-container">
         <h2 class="title">About me</h2>
         <p class="description">
-          I am a dedicated software engineer with over three years of industry
-          experience, specializing in mobile development, particularly Android
-          and Kotlin. My expertise spans both front-end and back-end
-          development, allowing me to approach projects with a comprehensive
-          perspective.<br /><br />
-          In dynamic startup environments, I have consistently taken on
-          versatile roles, contributing to technical innovation and project
-          management. My strong understanding of business processes and ability
-          to communicate effectively have been instrumental in bridging the gap
-          between technical teams and stakeholders.<br /><br />
-          Currently, I am pursuing a Master of IT at UTS, majoring in Enterprise
-          Software Development. I am passionate about leveraging cutting-edge
-          technologies to create impactful, user-focused applications, and I am
-          eager to apply my skills to drive meaningful results in software
-          engineering.
+          Hi, I&#39;m Leah, a software engineer based in Sydney with 4 years of
+          production experience, mainly in Android and mobile application
+          development.<br /><br />
+          I&#39;ve worked on consumer-facing mobile products across authentication,
+          subscriptions, media playback, analytics instrumentation, API
+          integration, release support, and post-release troubleshooting. My
+          strongest background is Kotlin-based Android development, and I&#39;m
+          especially interested in building reliable mobile foundations,
+          scalable app architecture, and product experiences that people use in
+          real life.<br /><br />
+          Alongside mobile engineering, I&#39;ve also been expanding into backend,
+          cloud, AI-assisted products, and iOS through professional work and my
+          Master of Information Technology at UTS.
         </p>
         <ul class="majors">
           <li class="major">
-            <i class="fa-brands fa-html5 major__icon"></i>
-            <p class="major__title">Front-end</p>
-            <p>HTML, CSS, JavaScript, React</p>
-          </li>
-          <li class="major">
             <i class="fa-solid fa-mobile major__icon"></i>
-            <p class="major__title">Mobile</p>
-            <p>Android, Kotlin, Java, MVVM, KMM</p>
+            <p class="major__title">Android &amp; Mobile</p>
+            <p>
+              Kotlin, Java, Android SDK, Jetpack Compose, Coroutines, MVVM,
+              Retrofit, OkHttp, Swift, SwiftUI
+            </p>
           </li>
           <li class="major">
-            <i class="fa-solid fa-server major__icon"></i>
-            <p class="major__title">Back-end</p>
-            <p>Python, Java, PHP, CodeIgniter</p>
+            <i class="fa-solid fa-cloud major__icon"></i>
+            <p class="major__title">Backend &amp; Cloud</p>
+            <p>Node.js, PostgreSQL, SQL, AWS, Python, REST APIs, MongoDB</p>
+          </li>
+          <li class="major">
+            <i class="fa-brands fa-html5 major__icon"></i>
+            <p class="major__title">Web / Frontend</p>
+            <p>JavaScript, React, Next.js, HTML, CSS</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-screwdriver-wrench major__icon"></i>
+            <p class="major__title">Tools &amp; Product</p>
+            <p>
+              Firebase, Firebase Analytics, Firebase Crashlytics, Gradle, Google
+              Play Console, Google Play Billing, QA, release support
+            </p>
           </li>
         </ul>
       </section>
@@ -164,12 +171,10 @@
                   class="project__img"
                 />
                 <div class="project__metadata">
-                  <h3 class="project__title">
-                    Professional Project<br />
-                    [mabo]
-                  </h3>
+                  <h3 class="project__title">Mabo Android App</h3>
                   <p>
-                    Media content streaming application for guided meditation
+                    Production Android app for a guided meditation platform with
+                    800K+ downloads
                   </p>
                 </div>
               </a>
@@ -189,52 +194,41 @@
                 </div>
               </a>
             </li>
-            <li class="project" data-type="front-end">
-              <a
-                href="https://github.com/shinjekim/shinjekim.github.io"
-                target="_blank"
-              >
+            <li class="project" data-type="mobile">
+              <a href="#colorpop-project">
                 <img
                   src="images/projects/project3_personal_website.png"
-                  alt="project3"
+                  alt="ColorPop project preview"
                   class="project__img"
                 />
                 <div class="project__metadata">
-                  <h3 class="project__title">
-                    Personal Project<br />
-                    [leahshinjekim.com]
-                  </h3>
+                  <h3 class="project__title">ColorPop</h3>
                   <p>
-                    Personal portfolio website with vanilla HTML, CSS, and
-                    JavaScript
+                    SwiftUI-based iOS prototype that generates colour palettes
+                    from user-defined keywords
                   </p>
                 </div>
               </a>
             </li>
             <li class="project" data-type="front-end">
-              <a
-                href="https://github.com/shinjekim/clone_theteams_about"
-                target="_blank"
-              >
+              <a href="#sum-up-project">
                 <img
                   src="images/projects/project4_theteams.png"
-                  alt="project4"
+                  alt="Sum-up project preview"
                   class="project__img"
                 />
                 <div class="project__metadata">
-                  <h3 class="project__title">
-                    Personal Project<br />
-                    [The Teams]
-                  </h3>
+                  <h3 class="project__title">Sum-up</h3>
                   <p>
-                    Clone coding HR platform with vanilla HTML, CSS, JavaScript
+                    AI-assisted learning support MVP comparing transcript-only
+                    and context-aware lecture summarisation
                   </p>
                 </div>
               </a>
             </li>
             <li class="project" data-type="back-end">
               <a
-                href="https://github.com/shinjekim/Depromeet_mini_QR"
+                href="https://github.com/leahshinjekim/Depromeet_mini_QR"
                 target="_blank"
               >
                 <img
@@ -256,7 +250,7 @@
             </li>
             <li class="project" data-type="back-end">
               <a
-                href="https://github.com/shinjekim/BudgetPlanner"
+                href="https://github.com/leahshinjekim/BudgetPlanner"
                 target="_blank"
               >
                 <img
@@ -276,21 +270,86 @@
                 </div>
               </a>
             </li>
-            <li class="project" data-type="front-end">
-              <img
-                src="images/projects/project7_youtube.png"
-                alt="project7"
-                class="project__img"
-              />
-              <div class="project__metadata">
-                <h3 class="project__title">
-                  In Progress<br />
-                  [Youtube clone coding]
-                </h3>
-                <p>Clone coding Youtube with React.js. To be updated.</p>
-              </div>
-            </li>
           </ul>
+          <article class="case-study">
+            <h3 class="case-study__title">Mabo Android App</h3>
+            <p class="case-study__subtitle">
+              Production Android app for a guided meditation platform with 800K+
+              downloads.
+            </p>
+            <p><strong>Role:</strong> Primary Android contributor</p>
+            <p>
+              <strong>Tech:</strong> Kotlin, Java, Android SDK, Jetpack Compose,
+              MVVM, Retrofit, OkHttp, Firebase, Firebase Analytics, Firebase
+              Crashlytics, Google Play Billing, Gradle
+            </p>
+            <p>
+              Mabo is a guided meditation app with user accounts,
+              subscriptions, audio playback, content discovery, analytics, push
+              notifications, and Google Play releases.
+            </p>
+            <p>
+              As the primary Android contributor, I was responsible for
+              maintaining and evolving much of the Android codebase across
+              authentication, subscriptions, media playback infrastructure,
+              analytics instrumentation, API integration, QA, release support,
+              and post-release troubleshooting.
+            </p>
+            <ul class="case-study__list">
+              <li>Authentication and session persistence</li>
+              <li>Subscription and payment flow</li>
+              <li>Media playback using foreground service and media notifications</li>
+              <li>REST API and third-party SDK integrations</li>
+              <li>Analytics and crash-reporting instrumentation</li>
+              <li>Google Play release support and post-release troubleshooting</li>
+              <li>App size optimisation, reducing app size by 76%</li>
+              <li>Release notes, QA checklists, and implementation documentation</li>
+            </ul>
+            <p>
+              <strong>Impact:</strong> Maintained and evolved much of the
+              Android codebase, improved release quality and maintainability,
+              supported stable playback and subscription flows for a large
+              production user base, and reduced app size by 76%.
+            </p>
+          </article>
+          <article id="sum-up-project" class="case-study case-study--compact">
+            <h3 class="case-study__title">
+              Sum-up: Context-Aware Lecture Summary Project
+            </h3>
+            <p class="case-study__subtitle">
+              AI-assisted learning support MVP comparing transcript-only and
+              context-aware lecture summarisation.
+            </p>
+            <p>
+              Led an 11-week UTS capstone project with a team of four, driving
+              planning, scope definition, stakeholder communication, and
+              delivery direction for an AI-assisted learning support MVP.
+            </p>
+            <p>
+              Designed the initial LLM prompt architecture and multi-source
+              input workflow, including source-role hierarchy, JSON output
+              schema, and evaluation criteria.
+            </p>
+            <p>
+              <strong>Tech:</strong> Next.js, Python, MongoDB, LLM prompting,
+              JSON output schema, evaluation criteria
+            </p>
+          </article>
+          <article id="colorpop-project" class="case-study case-study--compact">
+            <h3 class="case-study__title">
+              ColorPop: SwiftUI Color Palette Generator
+            </h3>
+            <p class="case-study__subtitle">
+              SwiftUI-based iOS prototype that generates colour palettes from
+              user-defined keywords.
+            </p>
+            <p>
+              Built a SwiftUI-based iOS prototype using MVVM architecture, with
+              keyword-based palette generation, pull-to-refresh, and one-tap hex
+              code copying.
+            </p>
+            <p><strong>Tech:</strong> Swift, SwiftUI, MVVM, Xcode</p>
+          </article>
         </div>
       </section>
       <!-- Testimonial -->
